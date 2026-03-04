@@ -99,11 +99,11 @@ class BubbleSort
   # TODO: Implement bubble sort
   # Return sorted array (ascending order)
   def sort(array)
-    array_length = array.size
-    return array if array_length <= 1
+    l = array.size
+    return array if l <= 1
     loop do
       swapped = false
-      (array_length-1).times do |i|
+      (l-1).times do |i|
         if array[i] > array[i+1]
           array[i], array[i+1] = array[i+1], array[i]
           swapped = true
